@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/theme.css') }}">
+</head>
+   <body>
+      <div class="a">
+         <h1>Job Recommendation</h1>
+            <form action = "http://localhost:5000/result" method = "POST">
+               <p>Write your skills or upload your resume..</p>
+               <input type = "text"  name = "Job" />
+               <br>
+               <br>
+               <input class='form-control' type='file' name='imagefile' style="width: 18%; height: 10%;">
+               <br>
+               <br>
+               <button class="button button1">Submit!</button>
+            </form>
+      </div>
+   </body>
+</html>
+
+
+
+
+<!-- <form class="p-3 text-center" action='/' method='post' enctype='multipart/form-data'>
+   <input class='form-control' type='file' name='imagefile'>
+   <br>
+   <br>
+   <input class="btn btn-primary mt-3" type='Submit' value="Predict Image">
+</form>
+
+{% if prediction %}
+   <p class="text-center">Image is a {{prediction}}</p>
+{% endif %} -->
